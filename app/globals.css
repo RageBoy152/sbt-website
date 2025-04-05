@@ -37,6 +37,17 @@
 
 
 /*   CUSTOMIZE SCROLLBAR   */
-::-webkit-scrollbar { height: 6px; width: 6px; }
-::-webkit-scrollbar-thumb { z-index: 10; cursor: default; background-color: var(--color-white); border-radius: 5px; }
-::-webkit-scrollbar-thumb:hover { background-color: var(--color-gray); }
+::-webkit-scrollbar { height: 10px; width: 6px; }
+::-webkit-scrollbar-thumb { transition: 0.15s ease-in-out opacity; cursor: default; background-color: #444; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background-color: #777; }
+
+
+
+/*   GRADIENT #111 - #111A   */
+.gradient-body { background: linear-gradient(#11111100, #111 75%); }
+
+.gradient-body-horizontal-end { background: linear-gradient(90deg, #11111100, #111); }
+.gradient-body-horizontal-start { background: linear-gradient(-90deg, #11111100, #111); }
+
+.gradient-black-horizontal-end { background: linear-gradient(90deg, #22222200, #222); }
+.gradient-black-horizontal-start { background: linear-gradient(-90deg, #22222200, #222); }
